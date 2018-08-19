@@ -26,11 +26,8 @@ class ChainFixtures extends Fixture implements FixtureInterface, OrderedFixtureI
     {
         $service = $this->container->get('eosportal.chains.chain_service');
         $urls = [
-            'http://dev.cryptolions.io:38888',
-            'http://35.180.46.228:8888',
-            'http://37.139.15.114:8800/',
-            'http://initg.n3.eosargentina.io:8888',
-        ];
+            'https://api.travelchain.io:443',
+            ];
 
         foreach ($urls as $url) {
             try {
